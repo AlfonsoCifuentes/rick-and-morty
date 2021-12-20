@@ -1,0 +1,13 @@
+<div class="mainContainer">
+  <div class="titleContainer">
+    <h1>LOCALIZACIONES</h1>
+  </div>
+
+    <div class="locationContainer">
+      <ng-container *ngFor="let locationIterator of locations">
+          <app-location-card [location]="locationIterator"></app-location-card>
+        </ng-container>
+    </div>
+  
+  </div>
+  

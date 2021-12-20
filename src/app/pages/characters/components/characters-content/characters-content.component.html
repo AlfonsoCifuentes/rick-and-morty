@@ -1,0 +1,11 @@
+<div class="mainContainer">
+    <div class="titleContainer">
+        <h1>PERSONAJES</h1>
+    </div>
+    <div class="characterContainer">
+        <ng-container *ngFor="let characterIterator of characterList">
+            <app-character-card [character] = "characterIterator"></app-character-card>
+        </ng-container>
+    </div>
+
+</div>
