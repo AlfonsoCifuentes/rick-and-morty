@@ -2,7 +2,7 @@ import { IUserRegister } from './../../models/form.interface';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { comparePassword } from '../../validators/matchValidator';
-import { ContactModule } from '../../contact.module';
+
 
 @Component({
   selector: 'app-contact-content',

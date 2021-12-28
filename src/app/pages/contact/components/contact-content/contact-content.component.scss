@@ -1,28 +1,62 @@
-.mainContainer{
-    margin:12rem auto ;
+.mainContainer {
+  margin: 12rem auto;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  background-color: rgba(0, 125, 129, 0.534);
+  border-radius: 15px;
+  border: chartreuse 5px solid;
+  .titleContainer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-text-stroke: 2px rgb(251, 255, 0);
+      letter-spacing: 8px;
+    }
+  }
+  .formContainer {
     display: flex;
     flex-direction: column;
-    align-self: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width:80%;
-    background-color: rgba(0, 125, 129, 0.534);
-    border-radius: 15px;
-    border: chartreuse 5px solid;
-    .titleContainer{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        h1{
-            font-family:Arial, Helvetica, sans-serif;
-            -webkit-text-stroke: 2px rgb(251, 255, 0);
-            letter-spacing: 8px;
-        }
+    justify-content: center;
+
+    padding: 2rem;
+    fieldset {
+
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(0, 39, 7, 0.808);
+      border-radius: 15px;
+      border-style: solid;
+      border-color: rgb(0, 255, 21);
+      border-width: 4px;
+      margin-top: 2rem;
     }
-    .formContainer{
-        display: flex;
-        flex-direction:row ;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding-bottom: 2rem;
+    button:disabled,
+    button[disabled] {
+      background-color: rgba(37, 42, 38, 0.808);
+      color: rgb(95, 105, 94);
     }
+    button {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 1.3rem;
+      color: chartreuse;
+      background-color: rgba(0, 39, 7, 0.808);
+      border-radius: 15px;
+      border-style: solid;
+      border-color: rgb(0, 255, 21);
+      border-width: 4px;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+    }
+  }
 }

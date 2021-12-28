@@ -1,30 +1,59 @@
 .heroMainDiv {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-
+  height: 100%; 
+  margin: 12vh auto;
   .imgContainer {
-    margin-top: 100px;
+width: 100%;
+    margin-top: 50px;
     img {
-      max-width: 38%;
+      max-width: 40%;
     }
   }
   .heroDiv {
-      position: relative;
-      bottom: 20%;
-      top: 0;
-      margin-top: -2rem;
+    width: 100%;
+    background-color: rgba(3, 3, 3, 0.705);
+    width: 70%;
+    border-radius: 25px;
+    border: chartreuse 5px solid;
+    margin: auto;
+
     h3 {
       margin-top: -1rem;
       color: rgb(137, 180, 94);
     }
-    background-color: rgba(3, 3, 3, 0.705);
-    width: 70%;
-    height: 50%;
-    border-radius: 25px;
-    border: chartreuse 5px solid;
-    
+  }
+}
+@media only screen and (max-width: 900px) {
+  .heroMainDiv {
+    .imgContainer {
+      margin-top: auto;
+      padding-top: 10rem;
+      img {
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .heroMainDiv {
+    .imgContainer {
+      margin-top: auto;
+      padding-top: 8rem;
+      img {
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heroMainDiv {
+    .imgContainer {
+      margin-top: auto;
+      padding-top: 12rem;
+      img {
+        max-width: 60%;
+      }
+    }
   }
 }

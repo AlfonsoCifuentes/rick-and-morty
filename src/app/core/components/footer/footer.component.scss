@@ -1,15 +1,17 @@
 footer{
-
+/*     position: fixed; */
     bottom: 0;
     width: 100%;
+    min-height: min-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    height: 1.5rem;
+    height: 1rem;
     padding: 1rem;
     background-color: #65c065;
-    margin-top: 3rem;
-    margin-bottom: 0;
+    font-size: 0.7rem;
+
+
 
 }

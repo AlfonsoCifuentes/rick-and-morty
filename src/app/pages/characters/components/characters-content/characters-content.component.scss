@@ -1,14 +1,11 @@
 .mainContainer{
-    margin:12rem auto ;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    margin: 15vh auto;
     width:80%;
     background-color: rgba(4, 134, 0, 0.534);
     border: chartreuse 5px solid;
     border-radius: 15px;
+
+
     .titleContainer{
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -23,6 +20,5 @@
         flex-direction:row ;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding-bottom: 2rem;
     }
 }
