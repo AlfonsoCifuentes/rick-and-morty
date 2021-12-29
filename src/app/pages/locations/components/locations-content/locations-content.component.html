@@ -3,11 +3,21 @@
     <h1>LOCALIZACIONES</h1>
   </div>
 
+  <div>
+    <button (click)="prevUrlClick()">ANTERIOR</button>
+    <button (click)="nextUrlClick()">SIGUIENTE</button>
+  </div>
+ 
     <div class="locationContainer">
       <ng-container *ngFor="let locationIterator of locations">
           <app-location-card [location]="locationIterator"></app-location-card>
         </ng-container>
     </div>
   
+    <div>
+      <button (click)="prevUrlClick()">ANTERIOR</button>
+      <button (click)="nextUrlClick()">SIGUIENTE</button>
+    </div>
+   
   </div>
   

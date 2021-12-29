@@ -9,6 +9,27 @@
     background-color: rgba(0, 125, 129, 0.534);
     border-radius: 15px;
     border: chartreuse 5px solid;
+    button {
+        border: rgb(225, 0, 255) 5px solid;
+        margin: 1rem;
+        background-color: rgba(0, 0, 0, 0.541);
+        border-radius: 8px;
+        font-size: 1.3rem;
+        color: rgb(145, 255, 0);
+        width: min-content;
+        cursor: pointer;
+        padding: 1rem;
+        transition: all 0.2s ease-in-out;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    }
+
+    button:hover{
+        color: rgb(255, 238, 0);
+        background-color: rgb(0, 0, 0);
+        border: rgb(255, 238, 0) 5px solid;
+        box-shadow: 0 5px 15px rgba(238, 255, 0, 0.4);
+    }
     .titleContainer{
         padding-top: 1rem;
         padding-bottom: 1rem;

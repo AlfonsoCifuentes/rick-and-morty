@@ -1,11 +1,23 @@
 <div class="mainContainer">
-    <div class="titleContainer">
-        <h1>PERSONAJES</h1>
-    </div>
-    <div class="characterContainer">
-        <ng-container *ngFor="let characterIterator of characterList">
-            <app-character-card [character] = "characterIterator"></app-character-card>
-        </ng-container>
-    </div>
 
+  <div class="titleContainer">
+    <h1>PERSONAJES</h1>
+  </div>
+
+  <div>
+    <button (click)="prevUrlClick()">ANTERIOR</button>
+    <button (click)="nextUrlClick()">SIGUIENTE</button>
+  </div>
+ 
+  <div class="characterContainer">
+    <ng-container *ngFor="let characterIterator of characterList">
+      <app-character-card [character]="characterIterator"></app-character-card>
+    </ng-container>
+  </div>
+
+  <div>
+    <button (click)="prevUrlClick()">ANTERIOR</button>
+    <button (click)="nextUrlClick()">SIGUIENTE</button>
+  </div>
+ 
 </div>
