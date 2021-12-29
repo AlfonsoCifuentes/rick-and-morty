@@ -6,12 +6,14 @@ import { CharactersContentComponent } from './components/characters-content/char
 import { HttpClientModule } from '@angular/common/http';
 import { HttpRequestService } from 'src/app/shared/services/http-request.service';
 import { CharacterCardComponent } from './components/characters-content/character-card/character-card.component';
+import { CharacterDetailComponent } from './components/characters-content/character-detail/character-detail.component';
 
 
 @NgModule({
   declarations: [
     CharactersContentComponent,
-    CharacterCardComponent
+    CharacterCardComponent,
+    CharacterDetailComponent
   ],
   imports: [
     CommonModule,

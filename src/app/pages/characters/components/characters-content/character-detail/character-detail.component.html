@@ -1,0 +1,38 @@
+<div class="mainContainer">
+
+  <div>
+    <button (click)="prevUrlClick()">ANTERIOR</button>
+    <button (click)="nextUrlClick()">SIGUIENTE</button>
+  </div>
+ 
+  <div class="nameContainer">
+    <h1>{{dataCharacter.name}}</h1>
+  </div>
+
+  <div class="infoContainer">
+    <div>
+      <img src="{{dataCharacter.image}}" alt="imagen de {{dataCharacter.name}}">
+    </div>
+    <div class="dataContainer">
+      <div class="infoElement">
+        <h2>Especie: <span>{{dataCharacter.species}}</span></h2>
+      </div>
+      <div class="infoElement">
+        <h2>Género: <span>{{dataCharacter.gender}}</span></h2>
+      </div>
+      <div class="infoElement">
+        <h2>Estado: <span>{{dataCharacter.status}}</span></h2>
+      </div>
+      <div class="infoElement">
+        <h2>Origen: <span>{{originDetail.name}}</span></h2>
+      </div>
+      <div class="infoElement">
+        <h2>Ubicación: <span>{{locationDetail.name}}</span></h2>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+

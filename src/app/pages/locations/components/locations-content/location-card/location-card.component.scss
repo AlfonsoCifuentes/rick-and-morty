@@ -1,4 +1,5 @@
 .card{
+    z-index: 1;
     background-color: rgba(3, 3, 3, 0.808);
     width: 30vh;
     height: 50vh ;
@@ -14,3 +15,21 @@
         width: 100px;
     }
 }
+
+.card:hover {
+    animation: bounce 0.5s linear;
+  }
+  @keyframes bounce {
+    20% {
+      transform: translateY(-6px);
+    }
+    40% {
+      transform: translateY(0px);
+    }
+    60% {
+      transform: translateY(-2px);
+    }
+    80% {
+      transform: translateY(-0px);
+    }
+  }

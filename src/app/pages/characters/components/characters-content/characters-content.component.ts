@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpRequestService } from 'src/app/shared/services/http-request.service';
+import { INumberOfCharacters } from '../../models/icharacterDetail';
 import { ICharacterList } from '../../models/icharacterList';
 
 @Component({
@@ -11,7 +12,7 @@ export class CharactersContentComponent implements OnInit {
 
   private URL: string="https://rickandmortyapi.com/api/character/?page=1";
   public characterList: ICharacterList[] = [];
-
+  public numberofCharacters!: INumberOfCharacters;
 
   public nextURL: string="";
   public prevURL: string="";
@@ -38,9 +39,12 @@ export class CharactersContentComponent implements OnInit {
   public recoverCharacters() {
     this.HttpRequestService.getData(this.URL).subscribe((data: any)=> {
       const results: ICharacterList[] = data.results;
-      const formattedResults = results.map (({name, image}) => ({
+      this.numberofCharacters = data.info.count
+      const formattedResults = results.map (({name, image, url, id}) => ({
         name,
         image,
+        url,
+        id
       }));
       this.characterList = formattedResults;
 

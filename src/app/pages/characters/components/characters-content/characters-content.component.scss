@@ -1,7 +1,7 @@
 .mainContainer{
     margin: 15vh auto;
     width:80%;
-    background-color: rgba(4, 134, 0, 0.534);
+    background-color: rgba(2, 42, 0, 0.602);
     border: chartreuse 5px solid;
     border-radius: 15px;
     button {
@@ -42,3 +42,10 @@
         justify-content: space-evenly;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .mainContainer{
+      margin: 25vh auto;
+    }
+  }
+  

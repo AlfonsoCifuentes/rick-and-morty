@@ -2,6 +2,7 @@
 
   <div class="titleContainer">
     <h1>PERSONAJES</h1>
+    <h2>({{numberofCharacters}})</h2>
   </div>
 
   <div>
@@ -10,7 +11,7 @@
   </div>
  
   <div class="characterContainer">
-    <ng-container *ngFor="let characterIterator of characterList">
+    <ng-container *ngFor="let characterIterator of characterList; index as i">
       <app-character-card [character]="characterIterator"></app-character-card>
     </ng-container>
   </div>
