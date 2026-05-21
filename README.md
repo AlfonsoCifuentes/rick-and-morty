@@ -49,7 +49,7 @@ Este repositorio resume una pieza de producto pensada para explicar el problema,
 | Complejidad | Intermediate |
 | Lenguaje principal | TypeScript |
 | Primera version | 20 de diciembre de 2021 |
-| Ultima actualizacion | 12 de mayo de 2026 |
+| Ultima actualizacion | 21 de mayo de 2026 |
 
 ## Enlaces
 
